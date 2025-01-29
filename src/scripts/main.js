@@ -15,7 +15,7 @@ function sortTable(ind) {
 
   const rows = [...table.querySelectorAll('tbody>tr')];
 
-  Array.from(rows).sort(function(rowA, rowB) {
+  rows.sort(function(rowA, rowB) {
     const cellA = rowA.cells[ind].innerText;
     const cellB = rowB.cells[ind].innerText;
 
